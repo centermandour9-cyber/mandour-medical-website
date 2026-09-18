@@ -10,6 +10,8 @@
 <meta property="og:title" content="مركز مندور الطبي | رعاية طبية متكاملة للأسرة">
 <meta property="og:description" content="رعاية طبية وأسنان متكاملة يقدمها فريق من الأطباء والمتخصصين في قلب القاهرة الجديدة.">
 <meta property="og:locale" content="ar_EG">
+<meta property="og:image" content="assets/center-building.jpg">
+<link rel="icon" type="image/png" href="assets/logo-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
@@ -36,7 +38,7 @@
 <header class="site-header">
   <div class="header-row container">
     <a href="index.html" class="brand">
-      <span class="brand-mark">MM</span>
+      <span class="brand-mark"><img src="assets/logo-icon.png" alt="Mandour Medical Center"></span>
       <span class="brand-name">
         <strong data-ar="مركز مندور الطبي" data-en="Mandour Medical Center">مركز مندور الطبي</strong>
         <span data-ar="التجمع الخامس - القاهرة الجديدة" data-en="Fifth Settlement - New Cairo">التجمع الخامس - القاهرة الجديدة</span>
@@ -60,10 +62,10 @@
         <button data-lang="ar" class="active">AR</button>
         <button data-lang="en">EN</button>
       </div>
-      <span class="phone-chip">
+      <a href="tel:+201128323232" class="phone-chip">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        <span data-ar="[رقم الهاتف]" data-en="[Phone Number]">[رقم الهاتف]</span>
-      </span>
+        <span data-ar="01128323232" data-en="01128323232">01128323232</span>
+      </a>
       <a href="#book" class="btn btn-primary btn-sm" data-ar="احجز موعدك" data-en="Book Appointment">احجز موعدك</a>
       <button class="hamburger" aria-label="menu"><span></span><span></span><span></span></button>
     </div>
@@ -78,7 +80,7 @@
     <a href="index.html#faq" data-ar="معلومات المرضى" data-en="Patient Info">معلومات المرضى</a>
     <a href="articles.html" data-ar="المقالات" data-en="Articles">المقالات</a>
     <a href="index.html#contact" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
-    <a href="https://wa.me/20000000000" data-ar="تواصل عبر واتساب" data-en="Chat on WhatsApp">تواصل عبر واتساب</a>
+    <a href="https://wa.me/201128323232" data-ar="تواصل عبر واتساب" data-en="Chat on WhatsApp">تواصل عبر واتساب</a>
   </div>
 </header>
 
@@ -109,88 +111,20 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="ph-label">
-        <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
-        <strong data-ar="صورة رئيسية لمركز مندور الطبي" data-en="Mandour Medical Center — main image">صورة رئيسية لمركز مندور الطبي</strong>
-        <span data-ar="سيتم استبدال هذا المكان بصورة حقيقية عالية الجودة للمركز أو الفريق الطبي" data-en="This placeholder will be replaced with a real, high-quality photo of the center or medical team">سيتم استبدال هذا المكان بصورة حقيقية عالية الجودة للمركز أو الفريق الطبي</span>
-      </div>
-      <div class="hero-badge-float">
-        <span class="num">[+XX]</span>
+      <img src="assets/center-building.jpg" alt="مركز مندور الطبي" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0;">
+      <div class="hero-badge-float" style="z-index:2;">
+        <span class="num">25+</span>
         <span class="label" data-ar="تخصص طبي في مكان واحد" data-en="Specialties under one roof">تخصص طبي في مكان واحد</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= QUICK BOOKING ================= -->
-<div class="container" id="book">
-  <div class="booking-panel">
-    <h2 data-ar="احجز موعدك الآن" data-en="Book Your Appointment">احجز موعدك الآن</h2>
-    <p class="lead-small" data-ar="املأ البيانات وسيتواصل معك فريقنا لتأكيد الموعد." data-en="Fill in your details and our team will contact you to confirm your appointment.">املأ البيانات وسيتواصل معك فريقنا لتأكيد الموعد.</p>
-
-    <div class="patient-toggle">
-      <button type="button" class="active" data-ar="مريض جديد" data-en="New Patient">مريض جديد</button>
-      <button type="button" data-ar="مريض حالي" data-en="Existing Patient">مريض حالي</button>
-    </div>
-
-    <form id="bookingForm" class="form-grid">
-      <div class="form-field">
-        <label data-ar="الاسم بالكامل" data-en="Full Name">الاسم بالكامل</label>
-        <input type="text" required data-ar-ph="اكتب اسمك بالكامل" data-en-ph="Enter your full name" placeholder="اكتب اسمك بالكامل">
-      </div>
-      <div class="form-field">
-        <label data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
-        <input type="tel" required data-ar-ph="01xxxxxxxxx" data-en-ph="01xxxxxxxxx" placeholder="01xxxxxxxxx">
-      </div>
-      <div class="form-field">
-        <label data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
-        <input type="email" data-ar-ph="example@email.com" data-en-ph="example@email.com" placeholder="example@email.com">
-      </div>
-      <div class="form-field">
-        <label data-ar="التخصص" data-en="Specialty">التخصص</label>
-        <select>
-          <option data-ar="اختر التخصص" data-en="Select specialty">اختر التخصص</option>
-          <option data-ar="طب الأسنان" data-en="Dentistry">طب الأسنان</option>
-          <option data-ar="الباطنة" data-en="Internal Medicine">الباطنة</option>
-          <option data-ar="خدمات التمريض" data-en="Nursing Services">خدمات التمريض</option>
-          <option data-ar="التحاليل الطبية" data-en="Medical Laboratory">التحاليل الطبية</option>
-        </select>
-      </div>
-      <div class="form-field">
-        <label data-ar="الطبيب (اختياري)" data-en="Doctor (optional)">الطبيب (اختياري)</label>
-        <select>
-          <option data-ar="بدون تفضيل" data-en="No preference">بدون تفضيل</option>
-        </select>
-      </div>
-      <div class="form-field">
-        <label data-ar="اليوم المفضل" data-en="Preferred Day">اليوم المفضل</label>
-        <input type="date">
-      </div>
-      <div class="form-field">
-        <label data-ar="الوقت المفضل" data-en="Preferred Time">الوقت المفضل</label>
-        <input type="time">
-      </div>
-      <div class="form-field full">
-        <label data-ar="ملاحظات" data-en="Notes">ملاحظات</label>
-        <textarea rows="3" data-ar-ph="أي معلومات إضافية تود مشاركتها" data-en-ph="Any additional information you'd like to share" placeholder="أي معلومات إضافية تود مشاركتها"></textarea>
-      </div>
-      <div class="form-actions form-field full">
-        <button type="submit" class="btn btn-primary" data-ar="طلب حجز موعد" data-en="Request Appointment">طلب حجز موعد</button>
-        <span class="form-note" data-ar="* هذا النموذج جاهز للربط لاحقًا مع واتساب، البريد الإلكتروني، Google Sheets، أو نظام إدارة المركز." data-en="* This form is ready to connect later to WhatsApp, email, Google Sheets, or your clinic management system.">* هذا النموذج جاهز للربط لاحقًا مع واتساب، البريد الإلكتروني، Google Sheets، أو نظام إدارة المركز.</span>
-      </div>
-    </form>
-    <div class="confirm-msg" id="bookingConfirm" data-ar="تم استلام طلبك بنجاح، سيتواصل معك فريق مركز مندور الطبي قريبًا لتأكيد الموعد." data-en="Your request has been received. Our team will contact you shortly to confirm your appointment.">تم استلام طلبك بنجاح، سيتواصل معك فريق مركز مندور الطبي قريبًا لتأكيد الموعد.</div>
-  </div>
-</div>
-
 <!-- ================= ABOUT ================= -->
 <section id="about">
   <div class="container about-grid">
-    <div class="about-visual">
-      <div>
-        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg>
-        <p style="margin-top:1rem" data-ar="صورة للفريق الطبي بمركز مندور" data-en="Photo of the Mandour medical team">صورة للفريق الطبي بمركز مندور</p>
-      </div>
+    <div class="about-visual" style="padding:0; overflow:hidden; border-style:solid;">
+      <img src="assets/center-building.jpg" alt="مبنى مركز مندور الطبي" style="width:100%; height:100%; object-fit:cover;">
     </div>
     <div>
       <div class="section-head">
@@ -224,10 +158,10 @@
 <section class="bg-teal section-tight">
   <div class="container">
     <div class="stats-bar">
-      <div class="stat"><span class="num">[XX+]</span><span class="lbl" data-ar="طبيب ومتخصص" data-en="Doctors &amp; Specialists">طبيب ومتخصص</span></div>
-      <div class="stat"><span class="num">[XX+]</span><span class="lbl" data-ar="تخصص طبي" data-en="Medical Specialties">تخصص طبي</span></div>
-      <div class="stat"><span class="num">[XX+]</span><span class="lbl" data-ar="مريض تمت رعايته" data-en="Patients Cared For">مريض تمت رعايته</span></div>
-      <div class="stat"><span class="num">[XX+]</span><span class="lbl" data-ar="سنوات من الرعاية" data-en="Years of Care">سنوات من الرعاية</span></div>
+      <div class="stat"><span class="num">82+</span><span class="lbl" data-ar="طبيب ومتخصص" data-en="Doctors &amp; Specialists">طبيب ومتخصص</span></div>
+      <div class="stat"><span class="num">25+</span><span class="lbl" data-ar="تخصص طبي" data-en="Medical Specialties">تخصص طبي</span></div>
+      <div class="stat"><span class="num">20,000+</span><span class="lbl" data-ar="مريض تمت رعايته" data-en="Patients Cared For">مريض تمت رعايته</span></div>
+      <div class="stat"><span class="num">14+</span><span class="lbl" data-ar="سنوات من الرعاية" data-en="Years of Care">سنوات من الرعاية</span></div>
     </div>
   </div>
 </section>
@@ -265,11 +199,34 @@
         <p data-ar="تحاليل دقيقة وسريعة داخل المركز، مع تنسيق مباشر مع طبيبك المعالج." data-en="Accurate, fast in-house lab testing, coordinated directly with your treating doctor.">تحاليل دقيقة وسريعة داخل المركز، مع تنسيق مباشر مع طبيبك المعالج.</p>
         <a href="specialty-template.html" class="more" data-ar="اعرف المزيد ←" data-en="Learn more →">اعرف المزيد ←</a>
       </div>
-      <div class="spec-card" style="border-style:dashed; justify-content:center; align-items:center; text-align:center; color:var(--ink-faint);">
-        <span class="ico" style="background:var(--gold-tint); color:var(--gold);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
-        <h3 data-ar="تخصصات إضافية" data-en="Additional specialties">تخصصات إضافية</h3>
-        <p data-ar="هذا المكان مُجهّز لإضافة أي تخصص طبي آخر يُؤكَّد وجوده فعليًا بالمركز." data-en="This slot is ready for any additional specialty confirmed to be offered at the center.">هذا المكان مُجهّز لإضافة أي تخصص طبي آخر يُؤكَّد وجوده فعليًا بالمركز.</p>
+      <div class="spec-card" style="background:var(--teal); border-color:var(--teal); justify-content:center; align-items:center; text-align:center;">
+        <span class="ico" style="background:rgba(255,255,255,.15); color:#fff;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span>
+        <h3 style="color:#fff;" data-ar="و 25 تخصصًا طبيًا" data-en="And 25 medical specialties">و 25 تخصصًا طبيًا</h3>
+        <p style="color:#C9D6D1;" data-ar="كل هذه التخصصات متاحة فعليًا بمركز مندور — تصفّح القائمة الكاملة أدناه." data-en="All of these specialties are actually available at Mandour Medical Center — browse the full list below.">كل هذه التخصصات متاحة فعليًا بمركز مندور — تصفّح القائمة الكاملة أدناه.</p>
       </div>
+    </div>
+
+    <div style="margin-top:3rem;">
+      <h3 style="text-align:center; margin-bottom:1.6rem;" data-ar="كل تخصصاتنا الطبية" data-en="All Our Medical Specialties">كل تخصصاتنا الطبية</h3>
+      <div class="tag-list" style="justify-content:center;">
+        <span data-ar="طب الأسنان" data-en="Dentistry">طب الأسنان</span>
+        <span data-ar="الباطنة العامة" data-en="Internal Medicine">الباطنة العامة</span>
+        <span data-ar="النساء والتوليد" data-en="Obstetrics &amp; Gynecology">النساء والتوليد</span>
+        <span data-ar="طب الأطفال" data-en="Pediatrics">طب الأطفال</span>
+        <span data-ar="القلب والأوعية الدموية" data-en="Cardiology">القلب والأوعية الدموية</span>
+        <span data-ar="المخ والأعصاب" data-en="Neurology">المخ والأعصاب</span>
+        <span data-ar="الأنف والأذن والحنجرة" data-en="ENT">الأنف والأذن والحنجرة</span>
+        <span data-ar="الجلدية والتجميل" data-en="Dermatology &amp; Cosmetics">الجلدية والتجميل</span>
+        <span data-ar="العلاج الطبيعي" data-en="Physiotherapy">العلاج الطبيعي</span>
+        <span data-ar="الصدر" data-en="Chest &amp; Pulmonology">الصدر</span>
+        <span data-ar="الأمراض النفسية" data-en="Psychiatry">الأمراض النفسية</span>
+        <span data-ar="خدمات التمريض" data-en="Nursing Services">خدمات التمريض</span>
+        <span data-ar="التحاليل الطبية" data-en="Medical Laboratory">التحاليل الطبية</span>
+        <span data-ar="الأشعة" data-en="Radiology">الأشعة</span>
+        <span data-ar="الطوارئ على مدار 24 ساعة" data-en="24-Hour Emergency">الطوارئ على مدار 24 ساعة</span>
+        <span data-ar="+ 10 تخصصات أخرى" data-en="+10 more specialties">+ 10 تخصصات أخرى</span>
+      </div>
+      <p style="text-align:center; font-size:.82rem; color:var(--ink-faint); margin-top:1.4rem;" data-ar="لم تجد التخصص الذي تبحث عنه؟ تواصل معنا وسنساعدك في التوجيه لأنسب طبيب." data-en="Can't find the specialty you're looking for? Contact us and we'll help direct you to the right doctor.">لم تجد التخصص الذي تبحث عنه؟ تواصل معنا وسنساعدك في التوجيه لأنسب طبيب.</p>
     </div>
   </div>
 </section>
@@ -328,18 +285,17 @@
     </div>
 
     <div class="grid-4">
-      <div class="doctor-card" data-spec="dental" data-days="sat,mon">
+      <div class="doctor-card" data-spec="dental">
         <div class="doctor-photo">
-          <div><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>
-          <p style="margin-top:.5rem" data-ar="صورة الطبيب" data-en="Doctor photo">صورة الطبيب</p></div>
+          <img src="assets/dr-khaled-mansour.jpg" alt="د. خالد منصور" style="width:100%; height:100%; object-fit:cover;">
         </div>
         <div class="doctor-info">
           <span class="spec" data-ar="طب الأسنان" data-en="Dentistry">طب الأسنان</span>
-          <h3 data-ar="د. [اسم الطبيب]" data-en="Dr. [Doctor Name]">د. [اسم الطبيب]</h3>
-          <span class="deg" data-ar="[الدرجة العلمية المؤكدة]" data-en="[Verified qualification]">[الدرجة العلمية المؤكدة]</span>
-          <p data-ar="[نبذة قصيرة عن الطبيب وخبراته]" data-en="[Short bio about the doctor and their experience]">[نبذة قصيرة عن الطبيب وخبراته]</p>
+          <h3 data-ar="د. خالد منصور" data-en="Dr. Khaled Mansour">د. خالد منصور</h3>
+          <span class="deg" data-ar="استشاري أسنان" data-en="Dental Consultant">استشاري أسنان</span>
+          <p data-ar="معيد بكلية طب الأسنان، وعضو الجمعية المصرية لجراحة الفم والوجه والفكين وعضو الجمعية المصرية لزراعة الأسنان." data-en="Teaching assistant at the Faculty of Dentistry; member of the Egyptian Association of Oral and Maxillofacial Surgery and the Egyptian Society for Dental Implants.">معيد بكلية طب الأسنان، وعضو الجمعية المصرية لجراحة الفم والوجه والفكين وعضو الجمعية المصرية لزراعة الأسنان.</p>
           <div class="doctor-actions">
-            <a href="doctor-template.html" class="btn btn-outline btn-sm" data-ar="الملف الشخصي" data-en="Profile">الملف الشخصي</a>
+            <a href="dr-khaled-mansour.html" class="btn btn-outline btn-sm" data-ar="الملف الشخصي" data-en="Profile">الملف الشخصي</a>
             <a href="#book" class="btn btn-primary btn-sm" data-ar="احجز" data-en="Book">احجز</a>
           </div>
         </div>
@@ -393,7 +349,7 @@
         </div>
       </div>
     </div>
-    <p style="text-align:center; margin-top:2rem; font-size:.85rem;" data-ar="ملحوظة: هذه بطاقات نموذجية — يتم استبدالها ببيانات الأطباء الحقيقية وصورهم من لوحة الإدارة." data-en="Note: these are sample cards — replace with real doctors' data and photos from the admin panel.">ملحوظة: هذه بطاقات نموذجية — يتم استبدالها ببيانات الأطباء الحقيقية وصورهم من لوحة الإدارة.</p>
+    <p style="text-align:center; margin-top:2rem; font-size:.85rem;" data-ar="ملحوظة: بطاقة د. خالد منصور ببيانات حقيقية؛ بقية البطاقات نموذجية وتُستبدل ببيانات باقي الأطباء الـ82 وصورهم." data-en="Note: Dr. Khaled Mansour's card uses real data; the remaining cards are samples to be replaced with the other 82 doctors' real data and photos.">ملحوظة: بطاقة د. خالد منصور ببيانات حقيقية؛ بقية البطاقات نموذجية وتُستبدل ببيانات باقي الأطباء الـ82 وصورهم.</p>
   </div>
 </section>
 
@@ -467,8 +423,30 @@
     <div class="testimonial-cta">
       <div class="stars">★★★★★</div>
       <h2 data-ar="رأي مرضانا يهمنا" data-en="Our patients' feedback matters">رأي مرضانا يهمنا</h2>
-      <p style="max-width:520px; margin-inline:auto;" data-ar="نفضّل أن تقرأ تقييمات حقيقية من مرضانا على Google بدلاً من نصوص غير موثقة هنا." data-en="We'd rather you read real reviews from our patients on Google than unverified text on this page.">نفضّل أن تقرأ تقييمات حقيقية من مرضانا على Google بدلاً من نصوص غير موثقة هنا.</p>
-      <a href="#" class="btn btn-gold" data-ar="شاهد تقييمات مرضانا على Google" data-en="See our reviews on Google">شاهد تقييمات مرضانا على Google</a>
+      <p style="max-width:560px; margin-inline:auto;" data-ar="نماذج حقيقية من تقييمات وتوصيات مرضانا على فيسبوك — نفتخر بثقتهم." data-en="Real examples of our patients' reviews and recommendations on Facebook — we're proud of their trust.">نماذج حقيقية من تقييمات وتوصيات مرضانا على فيسبوك — نفتخر بثقتهم.</p>
+
+      <div class="testimonial-shots">
+        <a href="assets/reviews-1.jpg" target="_blank" rel="noopener"><img src="assets/reviews-1.jpg" alt="تقييمات مرضى مركز مندور الطبي على فيسبوك"></a>
+        <a href="assets/reviews-2.jpg" target="_blank" rel="noopener"><img src="assets/reviews-2.jpg" alt="توصيات مرضى مركز مندور الطبي على فيسبوك"></a>
+      </div>
+
+      <h3 style="margin-bottom:1.2rem;" data-ar="من تجارب مرضانا (فيديو)" data-en="From our patients (video)">من تجارب مرضانا (فيديو)</h3>
+      <div class="video-grid">
+        <div class="video-embed">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1379629420305853&show_text=false" title="Mandour Medical Center patient video 1" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="video-embed">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3841166469351018&show_text=false" title="Mandour Medical Center patient video 2" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="video-embed">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F789451990869396&show_text=false" title="Mandour Medical Center patient video 3" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="video-embed">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1682035186085645&show_text=false" title="Mandour Medical Center patient video 4" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+      </div>
+
+      <a href="https://www.facebook.com/Mandour.medical.center.eg.ph/reviews" target="_blank" rel="noopener" class="btn btn-gold" data-ar="شاهد المزيد من التقييمات على فيسبوك" data-en="See more reviews on Facebook">شاهد المزيد من التقييمات على فيسبوك</a>
     </div>
   </div>
 </section>
@@ -482,13 +460,16 @@
       <p data-ar="نتعاون مع عدد من شركات التأمين الطبي. تحقق من تغطيتك قبل الزيارة." data-en="We work with a number of medical insurance providers. Check your coverage before your visit.">نتعاون مع عدد من شركات التأمين الطبي. تحقق من تغطيتك قبل الزيارة.</p>
     </div>
     <div class="insurance-grid">
-      <div class="insurance-chip" data-ar="[شركة تأمين 1]" data-en="[Insurance Provider 1]">[شركة تأمين 1]</div>
-      <div class="insurance-chip" data-ar="[شركة تأمين 2]" data-en="[Insurance Provider 2]">[شركة تأمين 2]</div>
-      <div class="insurance-chip" data-ar="[شركة تأمين 3]" data-en="[Insurance Provider 3]">[شركة تأمين 3]</div>
-      <div class="insurance-chip" data-ar="[شركة تأمين 4]" data-en="[Insurance Provider 4]">[شركة تأمين 4]</div>
-      <div class="insurance-chip" data-ar="[شركة تأمين 5]" data-en="[Insurance Provider 5]">[شركة تأمين 5]</div>
+      <div class="insurance-chip">AXA</div>
+      <div class="insurance-chip" data-ar="نكست كير" data-en="Next Care">نكست كير</div>
+      <div class="insurance-chip" data-ar="جلوب ميد" data-en="GlobeMed">جلوب ميد</div>
+      <div class="insurance-chip" data-ar="ميدرايت" data-en="MedRight">ميدرايت</div>
+      <div class="insurance-chip" data-ar="إيجي كير" data-en="Egy Care">إيجي كير</div>
+      <div class="insurance-chip" data-ar="أليكو" data-en="ALICO">أليكو</div>
+      <div class="insurance-chip" data-ar="عناية" data-en="Ayadi/Enaya">عناية</div>
+      <div class="insurance-chip" data-ar="البنك الأهلي" data-en="National Bank of Egypt">البنك الأهلي</div>
     </div>
-    <p style="font-size:.82rem; color:var(--ink-faint);" data-ar="* تُدار قائمة شركات التأمين من لوحة الإدارة — أضف أو احذف بسهولة." data-en="* The insurance-provider list is managed from the admin panel — add or remove easily.">* تُدار قائمة شركات التأمين من لوحة الإدارة — أضف أو احذف بسهولة.</p>
+    <p style="font-size:.82rem; color:var(--ink-faint);" data-ar="* القائمة قابلة للتحديث بسهولة عند إضافة شركات تأمين جديدة." data-en="* This list is easy to update whenever a new insurance provider is added.">* القائمة قابلة للتحديث بسهولة عند إضافة شركات تأمين جديدة.</p>
     <a href="#" class="btn btn-outline" data-ar="تحقق من التغطية التأمينية" data-en="Check Your Coverage">تحقق من التغطية التأمينية</a>
   </div>
 </section>
@@ -543,36 +524,98 @@
     <div class="contact-grid">
       <div class="contact-card">
         <h3 data-ar="مركز مندور الطبي" data-en="Mandour Medical Center">مركز مندور الطبي</h3>
-        <p data-ar="التجمع الخامس – القاهرة الجديدة – مصر" data-en="Fifth Settlement – New Cairo – Egypt">التجمع الخامس – القاهرة الجديدة – مصر</p>
+        <p data-ar="المنطقة الرابعة – الحي الثاني – بجوار مسجد الفرقان – التجمع الخامس – القاهرة الجديدة" data-en="4th District – 2nd Neighborhood – next to Al-Furqan Mosque – Fifth Settlement – New Cairo">المنطقة الرابعة – الحي الثاني – بجوار مسجد الفرقان – التجمع الخامس – القاهرة الجديدة</p>
         <div class="contact-row">
           <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-          <div><strong data-ar="الهاتف" data-en="Phone">الهاتف</strong><span data-ar="[رقم الهاتف]" data-en="[Phone Number]">[رقم الهاتف]</span></div>
+          <div><strong data-ar="الهاتف" data-en="Phone">الهاتف</strong><span data-ar="01128323232" data-en="01128323232">01128323232</span></div>
         </div>
         <div class="contact-row">
           <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21l1.9-5.7a8 8 0 1 1 3.4 3L3 21z"/></svg></span>
-          <div><strong>WhatsApp</strong><span data-ar="[رقم واتساب]" data-en="[WhatsApp Number]">[رقم واتساب]</span></div>
+          <div><strong>WhatsApp</strong><span>01128323232</span></div>
         </div>
         <div class="contact-row">
           <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" fill="none"/><path d="M4 6l8 6 8-6"/></svg></span>
-          <div><strong data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</strong><span data-ar="[البريد الإلكتروني]" data-en="[Email Address]">[البريد الإلكتروني]</span></div>
+          <div><strong data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</strong><span data-ar="centermandour9@gmail.com" data-en="centermandour9@gmail.com">centermandour9@gmail.com</span></div>
         </div>
         <div class="contact-row">
           <span class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
           <div><strong data-ar="مواعيد العمل" data-en="Working Hours">مواعيد العمل</strong><span data-ar="[مواعيد العمل]" data-en="[Working Hours]">[مواعيد العمل]</span></div>
         </div>
         <div class="contact-ctas">
-          <a href="tel:+20" class="btn btn-primary btn-sm" data-ar="اتصل الآن" data-en="Call Now">اتصل الآن</a>
-          <a href="https://wa.me/20000000000" class="btn btn-wa btn-sm" data-ar="واتساب" data-en="WhatsApp">واتساب</a>
+          <a href="tel:+201128323232" class="btn btn-primary btn-sm" data-ar="اتصل الآن" data-en="Call Now">اتصل الآن</a>
+          <a href="https://wa.me/201128323232" class="btn btn-wa btn-sm" data-ar="واتساب" data-en="WhatsApp">واتساب</a>
           <a href="#book" class="btn btn-outline btn-sm" data-ar="احجز موعدك" data-en="Book Appointment">احجز موعدك</a>
-          <a href="#" class="btn btn-outline btn-sm" data-ar="احصل على الاتجاهات" data-en="Get Directions">احصل على الاتجاهات</a>
+          <a href="https://www.google.com/maps/place/Mandour+Medical+Center+%D9%85%D8%B1%D9%83%D8%B2+%D9%85%D9%86%D8%AF%D9%88%D8%B1+%D8%A7%D9%84%D8%B7%D8%A8%D9%89%E2%80%AD/@30.0085724,31.4307293,17z/data=!3m1!4b1!4m6!3m5!1s0x14583cc5eb53705d:0xa6e8927c61a55374!8m2!3d30.0085724!4d31.4333042!16s%2Fg%2F11byflk7fs" target="_blank" rel="noopener" class="btn btn-outline btn-sm" data-ar="احصل على الاتجاهات" data-en="Get Directions">احصل على الاتجاهات</a>
         </div>
       </div>
-      <div class="map-frame">
-        <div>
-          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <p style="margin-top:1rem" data-ar="سيتم تضمين خريطة Google Maps الفعلية لموقع المركز هنا" data-en="The real Google Maps embed for the center's location will go here">سيتم تضمين خريطة Google Maps الفعلية لموقع المركز هنا</p>
-        </div>
+      <div class="map-frame" style="padding:0; min-height:340px;">
+        <iframe src="https://www.google.com/maps?q=30.0085724,31.4333042&z=17&output=embed" width="100%" height="100%" style="border:0; min-height:340px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mandour Medical Center Location"></iframe>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUICK BOOKING (bottom) ================= -->
+<section class="bg-alt" id="book">
+  <div class="container">
+    <div class="booking-panel" style="margin-top:0;">
+      <h2 data-ar="احجز موعدك الآن" data-en="Book Your Appointment">احجز موعدك الآن</h2>
+      <p class="lead-small" data-ar="املأ البيانات وسيتم فتح واتساب تلقائيًا لإرسال طلبك مباشرة لفريق مركز مندور الطبي." data-en="Fill in your details and WhatsApp will open automatically to send your request directly to the Mandour Medical Center team.">املأ البيانات وسيتم فتح واتساب تلقائيًا لإرسال طلبك مباشرة لفريق مركز مندور الطبي.</p>
+
+      <div class="patient-toggle">
+        <button type="button" class="active" data-ar="مريض جديد" data-en="New Patient">مريض جديد</button>
+        <button type="button" data-ar="مريض حالي" data-en="Existing Patient">مريض حالي</button>
+      </div>
+
+      <form id="bookingForm" class="form-grid">
+        <div class="form-field">
+          <label data-ar="الاسم بالكامل" data-en="Full Name">الاسم بالكامل</label>
+          <input id="bkName" type="text" required data-ar-ph="اكتب اسمك بالكامل" data-en-ph="Enter your full name" placeholder="اكتب اسمك بالكامل">
+        </div>
+        <div class="form-field">
+          <label data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
+          <input id="bkPhone" type="tel" required data-ar-ph="01xxxxxxxxx" data-en-ph="01xxxxxxxxx" placeholder="01xxxxxxxxx">
+        </div>
+        <div class="form-field">
+          <label data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</label>
+          <input id="bkEmail" type="email" data-ar-ph="example@email.com" data-en-ph="example@email.com" placeholder="example@email.com">
+        </div>
+        <div class="form-field">
+          <label data-ar="التخصص" data-en="Specialty">التخصص</label>
+          <select id="bkSpecialty">
+            <option data-ar="اختر التخصص" data-en="Select specialty">اختر التخصص</option>
+            <option data-ar="طب الأسنان" data-en="Dentistry">طب الأسنان</option>
+            <option data-ar="الباطنة" data-en="Internal Medicine">الباطنة</option>
+            <option data-ar="خدمات التمريض" data-en="Nursing Services">خدمات التمريض</option>
+            <option data-ar="التحاليل الطبية" data-en="Medical Laboratory">التحاليل الطبية</option>
+            <option data-ar="تخصص آخر" data-en="Other specialty">تخصص آخر</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label data-ar="الطبيب (اختياري)" data-en="Doctor (optional)">الطبيب (اختياري)</label>
+          <select id="bkDoctor">
+            <option data-ar="بدون تفضيل" data-en="No preference">بدون تفضيل</option>
+            <option data-ar="د. خالد منصور - أسنان" data-en="Dr. Khaled Mansour - Dentistry">د. خالد منصور - أسنان</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label data-ar="اليوم المفضل" data-en="Preferred Day">اليوم المفضل</label>
+          <input id="bkDate" type="date">
+        </div>
+        <div class="form-field">
+          <label data-ar="الوقت المفضل" data-en="Preferred Time">الوقت المفضل</label>
+          <input id="bkTime" type="time">
+        </div>
+        <div class="form-field full">
+          <label data-ar="ملاحظات" data-en="Notes">ملاحظات</label>
+          <textarea id="bkNotes" rows="3" data-ar-ph="أي معلومات إضافية تود مشاركتها" data-en-ph="Any additional information you'd like to share" placeholder="أي معلومات إضافية تود مشاركتها"></textarea>
+        </div>
+        <div class="form-actions form-field full">
+          <button type="submit" class="btn btn-primary" data-ar="إرسال الطلب عبر واتساب" data-en="Send Request via WhatsApp">إرسال الطلب عبر واتساب</button>
+          <span class="form-note" data-ar="* سيتم فتح واتساب برسالة معبأة ببياناتك — راجعها ثم اضغط إرسال." data-en="* WhatsApp will open with a message pre-filled from your details — review it, then hit send.">* سيتم فتح واتساب برسالة معبأة ببياناتك — راجعها ثم اضغط إرسال.</span>
+        </div>
+      </form>
+      <div class="confirm-msg" id="bookingConfirm" data-ar="جارٍ فتح واتساب لإرسال طلبك لفريق مركز مندور الطبي..." data-en="Opening WhatsApp to send your request to the Mandour Medical Center team...">جارٍ فتح واتساب لإرسال طلبك لفريق مركز مندور الطبي...</div>
     </div>
   </div>
 </section>
@@ -583,14 +626,16 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="brand" style="margin-bottom:1rem;">
-          <span class="brand-mark">MM</span>
+          <span class="brand-mark"><img src="assets/logo-icon.png" alt="Mandour Medical Center"></span>
           <strong style="color:#fff; font-family:'Cairo';" data-ar="مركز مندور الطبي" data-en="Mandour Medical Center">مركز مندور الطبي</strong>
         </div>
         <p data-ar="رعاية طبية متكاملة للأسرة، في قلب التجمع الخامس، القاهرة الجديدة." data-en="Integrated family medical care, in the heart of the Fifth Settlement, New Cairo.">رعاية طبية متكاملة للأسرة، في قلب التجمع الخامس، القاهرة الجديدة.</p>
         <div class="footer-social">
-          <a href="#" aria-label="facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l.5-4H13V6.5c0-1.2.3-2 2-2h2V1.1C16.6 1 15.4 1 14 1c-3 0-5 1.8-5 5.2V9H6v4h3v9h4z"/></svg></a>
-          <a href="#" aria-label="instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
-          <a href="#" aria-label="whatsapp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21l1.9-5.7a8 8 0 1 1 3.4 3L3 21z"/></svg></a>
+          <a href="https://www.facebook.com/Mandour.medical.center.eg.ph/" target="_blank" rel="noopener" aria-label="facebook" title="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l.5-4H13V6.5c0-1.2.3-2 2-2h2V1.1C16.6 1 15.4 1 14 1c-3 0-5 1.8-5 5.2V9H6v4h3v9h4z"/></svg></a>
+          <a href="https://www.facebook.com/mandour.eg" target="_blank" rel="noopener" aria-label="facebook-2" title="Facebook (page 2)"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l.5-4H13V6.5c0-1.2.3-2 2-2h2V1.1C16.6 1 15.4 1 14 1c-3 0-5 1.8-5 5.2V9H6v4h3v9h4z"/></svg></a>
+          <a href="https://www.instagram.com/mandourmedicalcenter_" target="_blank" rel="noopener" aria-label="instagram" title="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://www.tiktok.com/@mandour.medicalcenter" target="_blank" rel="noopener" aria-label="tiktok" title="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.2a2.8 2.8 0 1 1-2-2.68V9.4a5.8 5.8 0 1 0 5 5.75V8.1a7 7 0 0 0 4 1.25V6.3a4 4 0 0 1-4-4.3z"/></svg></a>
+          <a href="https://wa.me/201128323232" target="_blank" rel="noopener" aria-label="whatsapp" title="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21l1.9-5.7a8 8 0 1 1 3.4 3L3 21z"/></svg></a>
         </div>
       </div>
       <div>
@@ -615,8 +660,8 @@
       <div>
         <h4 data-ar="بيانات التواصل" data-en="Contact Details">بيانات التواصل</h4>
         <ul>
-          <li data-ar="[رقم الهاتف]" data-en="[Phone Number]">[رقم الهاتف]</li>
-          <li data-ar="[البريد الإلكتروني]" data-en="[Email Address]">[البريد الإلكتروني]</li>
+          <li data-ar="01128323232" data-en="01128323232">01128323232</li>
+          <li data-ar="centermandour9@gmail.com" data-en="centermandour9@gmail.com">centermandour9@gmail.com</li>
           <li data-ar="التجمع الخامس، القاهرة الجديدة" data-en="Fifth Settlement, New Cairo">التجمع الخامس، القاهرة الجديدة</li>
         </ul>
       </div>
@@ -632,7 +677,11 @@
 </footer>
 
 <!-- ================= FLOATING WHATSAPP ================= -->
-<a class="wa-float" href="https://wa.me/20000000000?text=السلام%20عليكم%2C%20أرغب%20في%20حجز%20موعد%20في%20مركز%20مندور%20الطبي." aria-label="WhatsApp" target="_blank" rel="noopener">
+<a class="call-float" href="tel:+201128323232" aria-label="Call">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+
+<a class="wa-float" href="https://wa.me/201128323232?text=السلام%20عليكم%2C%20أرغب%20في%20حجز%20موعد%20في%20مركز%20مندور%20الطبي." aria-label="WhatsApp" target="_blank" rel="noopener">
   <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A10.4 10.4 0 0 0 12.1 0C6.2 0 1.4 4.8 1.4 10.7c0 1.9.5 3.7 1.4 5.3L1 21l5.2-1.4a10.7 10.7 0 0 0 5.9 1.7h0c5.9 0 10.7-4.8 10.7-10.7 0-2.9-1.1-5.6-3.1-7.6zM12.1 19.3h0a8.9 8.9 0 0 1-4.5-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.9 8.9 0 1 1 7.3 3.9zm4.9-6.6c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.7 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
 </a>
 
